@@ -1,0 +1,608 @@
+body{
+    margin: 0;
+}
+
+.bannerHeader{
+    background: url('../img/header-bg.jpg') center / cover fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.inlineNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inlineNav ul{
+    list-style: none;
+}
+
+.inlineNav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.logo{
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.list{
+    display: inline-flex;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+.list li{
+    margin: 0 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+.list li::before{
+    content:'';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+    transition: 1s;
+}
+
+
+.list li:hover:before{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+}
+
+/* BANNER title */
+
+
+.bannerTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    text-align: center;
+}
+
+.bannerTitle h3{
+    color: gray;
+    font-size:45px;
+    letter-spacing: 5px;
+}
+
+.bannerTitle h1{
+    color: white;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+
+.bannerTitle a{
+    color: white;
+    padding: 10px 10px;
+    background-color: gold;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+
+
+.toggleIcon{
+    display: none;
+    position: absolute;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA */
+
+
+@media (max-width:817px){
+    .list{
+        display: none;
+    }
+    .toggleIcon{
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 5px;
+    }
+}
+
+
+
+.titleServices{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.titleServices h1{
+    font-size: 45px;
+}
+
+.titleServices p{
+    color: gray;
+    font-style: italic;
+}
+
+
+
+
+/* SERVICES */
+
+
+.ParentServices{
+    width: 90%;
+    margin: auto;
+}
+
+.inlineServices{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card .circle img{
+    width: 70px;
+}
+
+.circle{
+    background-color: gold;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    text-align: center;
+}
+
+
+
+
+/* Portfolio */
+
+
+.portTitle{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.portTitle h1{
+    font-size: 45px;
+}
+
+.portTitle p{
+    color: gray;
+    font-style: italic;
+}
+
+.backGray{
+    background-color: rgba(0,0,0,0.1);
+}
+.parentPortfolio{
+    width: 90%;
+    margin: auto;
+}
+
+.inlinePortfolio{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cardPort{
+    background-color: white;
+    height: 350px;
+    width: 350px;
+    text-align: center;
+    margin: 20px 20px;
+}
+
+.cardPort img{
+    width: 100%;
+    height: 250px;
+}
+
+
+
+
+
+
+@media (max-width:727px){
+    .bannerTitle h3{
+        font-size: 20px;
+    }
+
+    .bannerTitle h1{
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width:800px){
+    .inlineServices{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 300px;
+    }
+    
+    .card div:nth-child(1){
+        margin: auto;
+    }
+}
+
+
+
+
+.about{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.aboutTitle h1{
+    font-size: 45px;
+}
+
+.aboutTitle p{
+    color: gray;
+    font-style: italic;
+}
+
+.aboutParent{
+    width: 70%;
+    margin: auto;
+}
+
+.centerAbout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstBlock{
+    display: flex;
+}
+
+.leftSide{
+    text-align: right;
+    width: 45%;
+}
+
+.rightSide .rightTitle img{
+    width: 250px;
+    height: 200px;
+    border:5px solid gold;
+    border-radius: 100%;
+
+}
+
+
+.firstBlock div{
+    margin: 0 20px;
+}
+
+
+.second{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.text-right{
+    text-align: left;
+}
+
+hr{
+    border:2px dashed black;
+    margin: 30px 0;
+}
+
+
+.teamTitle{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.teamTitle h1{
+    font-size: 45px;
+}
+
+.teamTitle p{
+    color: gray;
+    font-style: italic;
+}
+
+
+.team{
+    background-color: gainsboro;
+    padding: 30px 0;
+}
+.teamParent{
+    width: 90%;
+    margin:50px auto;
+}
+
+.teamInline{
+    display: flex;
+    justify-content: space-between;
+}
+
+.one{
+    width: 300px;
+    text-align: center;
+}
+
+.one .imgBlock img{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    border:5px solid purple;
+    box-shadow: 0 0 20px purple;
+}
+
+.icons{
+    display: inline-flex;
+    padding-left: 0;
+}
+
+.icons li a{
+    color: purple;
+    font-size: 22px;
+    padding: 10px 15px;
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 100%;
+}
+
+.icons li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+
+
+/* PARTNERS */
+
+
+.parentPartners{
+    width: 90%;
+    margin: auto;
+}
+
+.inlinePartners{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding-left: 0;
+}
+
+
+
+
+/* FOOTER */
+
+
+.backgroundFooter{
+    background: url('../img/wp2787778.jpg') center / cover;
+    width: 100%;
+    height: 100%;
+    padding: 30px 0;
+}
+
+.contactTitle h1{
+    margin: 0;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 45px;
+    padding-top:40px;
+}
+
+
+.parentForm{
+    width: 80%;
+    margin: auto;
+}
+
+
+form{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.leftForm div input{
+    padding: 20px 20px;
+    border-radius: 5px;
+    border:0;
+    margin: 10px 0;
+    width: 450px;
+}
+
+.rightForm div textarea{
+    height: 170px;
+    border-radius: 5px;
+    border:0;
+    width: 450px;
+    padding: 18px 5px;
+}
+
+form div{
+    margin: 0 10px;
+}
+
+.button{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.button button{
+    padding: 15px 20px;
+    width: 150px;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: gold;
+}
+
+
+.footer{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.inlineFooter{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.inlineFooter ul{
+    list-style: none;
+    margin: 0;
+}
+
+.copyright{
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.colorIcons li a{
+    color: white;
+}
+
+
+
+
+@media (max-width:1141px){
+    form{
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width:951px){
+    .firstBlock{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leftSide{
+        text-align: center;
+        width: 90%;
+    }
+
+    .text-right{
+        text-align: center;
+        width: 90%;
+    }
+    .teamInline{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width:832px){
+    .inlinePartners{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width:679px){
+    .inlineFooter{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .inlineFooter ul{
+        margin: 30px 0;
+        transition: 1s;
+    }
+}
+
+
+@media (max-width:514px){
+    form .leftForm input{
+        width: 300px;
+    }
+
+    form .rightForm div textarea{
+        width: 300px;
+    }
+}
+
+
+@media (max-width:409px){
+    .copyright li{
+        font-size: 20px;
+    }
+
+    .copyright{
+        padding-left: 0;
+    }
+}
+
+@media (max-width:361px){
+  
+    form .leftForm input{
+        width: 88%;
+    }
+
+    form .rightForm div textarea{
+        width: 95%;
+    }
+
+    .rightForm{
+        width: 100%;
+    }
+    .parentForm{
+        width: 100%;
+    }
+
+    .leftForm{
+        width: 100%;
+    }
+}
+
+@media (max-width:340px){
+    .rightSide .rightTitle img{
+        width: 200px;
+    }
+}
+
+
+@media (max-width:320px){
+    .teamInline .one{
+        margin: 20px 0;
+    }
+}
